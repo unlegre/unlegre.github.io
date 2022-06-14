@@ -1,0 +1,564 @@
+/* aca empieza body*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(./img/fondonegro.jpg);
+}
+html{
+    scroll-behavior: smooth;  /* con esto hace el efecto de subir de apoco con el boton subir*/
+}
+/* aca termina body*/
+
+
+/* aca empieza navbar*/
+#logo{  /* id del logo del navegador*/
+    text-align: left;
+    font-size: 55px;
+    text-shadow: 5px 5px 5px #ff0;              
+}    
+#navbar a{
+        color: #fff;
+        text-shadow: 2px 2px 5px #ff0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;   
+} 
+
+.ale_navbar{
+    background-color:rgba(0, 0, 0, 0.6) !important;
+}
+.ale_navbar div, .ale_navbar ul{
+    background-color: transparent !important;
+
+}     
+
+/* aca termina navbar*/
+                                        /* empieza index */
+
+/* empieza banner */
+.ale_cont_banner{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./img/calavera6.jpg");
+}
+.portfolio_cont_banner{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./img/fantasy.jpg");
+}
+.ale_sombra{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform:translate(-50%, -50%) ;
+    -webkit-transform:translate(-50%, -50%) ;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  
+    color: red;
+    margin: auto;
+}
+.ale_sombra hr{
+    border-top: 1px solid #fff;
+   
+}
+.ale_sombra h1{ 
+    font-size: 8vw;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 5px orange;
+
+}
+.ale_sombra p{
+    font-size: 4vw;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.ale_cont_banner_link{
+    margin: 15px;
+    position: relative;
+   
+}
+.ale_cont_banner_link a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 1px;
+    margin-bottom: 5px;
+    width: 150px;
+    border-radius: 5px;
+    text-shadow: 5px 5px 5px orange;
+}
+.ale_cont_banner_link a:hover{
+    background-color: #fff;
+    color: #111;
+}
+
+@keyframes ale_aparece{
+    from{
+        opacity: 0;
+        top: -150px;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+@-webkit-keyframes ale_aparece{
+    from{
+        opacity: 0;
+        top: -150px;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+.ale_banner_link{
+    opacity: 0;
+    align-items:ale_aparece 1s;
+    -webkit-animation: ale_aparece 1s;
+    animation-fill-mode: forwards;
+  
+}
+.ale_banner_link_1{
+    opacity: 0;
+    align-items:ale_aparece 1s;
+    -webkit-animation: ale_aparece 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+.ale_banner_link_2{
+    opacity: 0;
+    align-items:ale_aparece 1s;
+    -webkit-animation: ale_aparece 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+.ale_banner_link_3{
+    opacity: 0;
+    align-items:ale_aparece 1s;
+    -webkit-animation: ale_aparece 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+/* termina banner */
+
+/* empieza contenedor1 */
+.ale_cont_sec_1{
+    padding: 10%;
+}
+.ale_cont_sec_1_link{
+    padding: 5%;
+}
+.ale_cont_sec_link a{
+    width: 200px;
+}
+.ale_cont_sec_1{
+    border-top: 1px solid rgba(219, 211, 211, 0.7);
+}
+.ale_cont_sec_1 h2{
+    color: #fff;
+    text-shadow: 5px 5px 5px orange
+}
+.ale_cont_sec_1 p{
+    color: #fff;
+}  
+.ale_cont_sec_1 b{
+    color: #fff;
+} 
+.ale_cont_sec_1 hr{
+    color: #fff;
+}   
+
+/* empieza contenedor2 */
+.ale_cont_sec_2{
+    border-top: 1px solid rgba(219, 211, 211, 0.7);
+}
+.ale_cont_sec_2 h2{
+    color: #fff;
+    text-shadow: 5px 5px 5px orange
+}
+.ale_cont_sec_2 p{
+    color: #fff;
+}  
+.ale_cont_sec_2 b{
+    color: #fff;
+} 
+.ale_cont_sec_2 hr{
+    color: #fff;
+} 
+.ale_cont_sec_2 a{
+    font-size: 35px;
+    color: #fff;
+}   
+/* termina contenedor2 */
+
+/* empieza contenedor3 */
+
+
+.ale_cont_banner_sec_3{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/calavera8.jpg);
+    position: relative;
+    padding: 10%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+}
+.ale_cont_banner_sec_3 .row{
+    background-color: rgba(1, 1,1, 0.7);
+    color: #fff;
+    padding: 2%;
+
+}
+.ale_cont_img{
+    padding: 5%;
+}
+.ale_cont_banner_sec_3 h2{
+    color: #fff;
+    text-shadow: 5px 5px 5px orange;
+}
+.hr{
+    border-top: 1px solid black;
+}
+.ale_cont_sec_3 hr{
+    color: #fff;
+} 
+/* termina contenedor3 */
+
+/* empieza contenedor4 */
+
+.cont_4 img{
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.cont_4 img:hover{  
+    transform: scale(1.07); /*  creo con el hover el efecto que* se agranda */
+    transition: all 0.7s;   /*le doy el tiempo que sobresale de entrada */
+    box-shadow: 0px 1px 7px #fff,/*le doy la sobra tantas veces quiera*/
+                0px 1px 7px #ff0;
+    cursor: pointer;            
+           
+}
+.cont_4 h2{
+    color: #fff;
+    text-shadow: 5px 5px 5px orange;
+}
+.cont_4 h3{
+    color: #fff;
+    text-shadow: 5px 5px 5px orange;
+}
+.cont_4 p{
+    color: #fff;
+}
+.hr_4{
+    color: #fff;
+    border-top: 1px solid #fff;
+} 
+
+/* termina contenedor4 */
+
+
+/* empieza contenedor5 */
+.ale_cont_5{
+    background-color: rgba(109, 87, 87, 0.7);
+    background-image: url(./img/fondonegro.jpg);
+    padding: 10%;
+    color:white;
+    margin-top: 100px;
+} 
+.ale_cont_5 h2, h3{
+    text-shadow: 5px 5px 5px orange;
+}
+.conocenos a{
+    text-shadow: 0px 0px 2px rgb(236, 234, 228);  
+}
+/* link*/
+.ale_cont_5 a{ 
+    background-image: url(./img/fondonegro.jpg);
+    text-decoration: none;
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-bottom: 6px;
+    padding: 1px;
+    box-shadow: 0px 1px 7px #fff,/*le doy la sobra tantas veces quiera*/
+    0px 1px 7px #ff0;
+   
+}
+.ale_cont_5{
+    padding: 5%;
+}
+.hr_5{
+    color: #fff;
+    border-top: 1px solid #fff;
+} 
+/* termina contenedor5 */
+
+                                        /* termina index */
+
+                                        /* empieza galeria */
+/* empieza banner galeria */                                        
+.galeria_cont_banner{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./img/calavera2.jpg");
+}
+/* termina banner galeria */
+
+/* empieza contenedor3 galeria*/
+
+
+.galeria_cont_banner_sec_3{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/fantasy-ga3be47928_1920.jpg);
+    position: relative;
+    padding: 10%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+}
+.galeria_cont_banner_sec_3 .row{
+    background-color: rgba(1, 1,1, 0.7);
+    color: #fff;
+    padding: 2%;
+
+}
+.ale_cont_img{
+    padding: 5%;
+}
+.galeria_cont_banner_sec_3 h2{
+    color: #fff;
+    text-shadow: 5px 5px 5px orange;
+}
+.hr{
+    border-top: 1px solid black;
+}
+.ale_cont_sec_3 hr{
+    color: #fff;
+} 
+/* termina contenedor3 galeria */
+
+/* empieza contenedor3 porfolio*/
+
+
+.porfolio_cont_banner_sec_3{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/fantasy-mujer-relog.jpg);
+    position: relative;
+    padding: 10%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+}
+.porfolio_cont_banner_sec_3 .row{
+    background-color: rgba(1, 1,1, 0.7);
+    color: #fff;
+    padding: 2%;
+
+}
+.ale_cont_img{
+    padding: 5%;
+}
+.porfolio_cont_banner_sec_3 h2{
+    color: #fff;
+    text-shadow: 5px 5px 5px orange;
+}
+.hr{
+    border-top: 1px solid black;
+}
+.ale_cont_sec_3 hr{
+    color: #fff;
+} 
+/* termina contenedor3 galeria */
+
+
+                                       
+
+                                         /* termina galeria */
+
+                                         /* empieza nosotros */
+/* empieza banner nosotros */                                        
+.nosotros_cont_banner{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./img/yo1.png");   
+}
+/* empieza banner nosotros */
+
+/* empieza contenedor3 Nosotros */ 
+
+.nosotros_cont_banner_sec_3{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/woman-gb4fcd62d9_1920.jpg);
+    position: relative;
+    padding: 10%;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.nosotros_cont_banner_sec_3 .row{
+    background-color: rgba(1, 1,1, 0.7);
+    color: #fff;
+    padding: 2%;
+}
+.nosotros_cont_banner_sec_3 img:hover{
+    transform: scale(1.07); /*  creo con el hover el efecto que* se agranda */
+    transition: all 0.7s;   /*le doy el tiempo que sobresale de entrada */
+    box-shadow: 0px 1px 7px #fff,/*le doy la sobra tantas veces quiera*/
+                0px 1px 7px #ff0;
+    cursor: pointer; 
+    margin-bottom: 20px;   
+
+}
+/* termina contenedor3 Nosotros */ 
+
+
+                                         /* termina nosotros */
+/* empieza banner galeria */                                        
+.contacto_cont_banner{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./img/rio.jpg");
+}
+
+/* termina banner galeria */                                         
+                                         /* empieza contacto*/
+
+
+label{
+    color: #fff;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+                                         /* empieza contacto*/
+
+  /* aca empieza footer*/
+
+.ale_cont_footer img:hover{
+    transform: scale(1.07); /*  creo con el hover el efecto que* se agranda */
+    transition: all 0.7s;   /*le doy el tiempo que sobresale de entrada */
+    box-shadow: 0px 1px 7px #fff,/*le doy la sobra tantas veces quiera*/
+                0px 1px 7px #ff0;
+    cursor: pointer; 
+    margin-bottom: 20px;           
+           
+}
+
+footer{
+    text-align: center;  /* alineo los iconos de las redes , como son palabras y no imagenes*/
+}
+
+footer i{  /*  le doy tamaño de los iconos (i) y color*/
+    font-size: 50px;
+    color: rgb(255, 166, 0);
+    border-radius: 45%;
+    text-align: center;
+    letter-spacing: 30px;  /* separa las palabras y como los iconos son palabras los puede hacer */
+    background-position: center;
+    }
+                                                  
+footer p{
+          color:white;
+    }  
+footer i{
+        color:white;
+        font-size: 35px;
+        text-shadow: 0px 2px 2px #ff0;
+    } 
+footer h2{
+    color:#fff;
+}
+.img_fotter{
+
+    box-shadow: 0px 1px 7px #fff,/*le doy la sobra tantas veces quiera*/
+                0px 1px 7px #ff0,
+                0px 1px 7px #fff,
+                0px 1px 7px #ff0;
+    cursor: pointer;       
+}
+.pie{
+    height: 40px;
+    width: 60px;
+    border: 3px solid rgba(246, 247, 246, 0.911);
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15%;
+    margin-bottom: 30px;
+    background-position: right;
+    box-shadow: 2px 2px 10px rgb(216, 215, 202); 
+    position: fixed;
+    } 
+    .up{
+        height: 40px;
+        width: 40px;
+        border: 3px solid rgba(237, 238, 232, 0.911);
+        bottom: 20px;
+        right: 20px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 45%;
+        margin-bottom: 30px;
+        background-position: right;
+        box-shadow: 2px 4px 6px rgb(240, 235, 235); 
+        }        
+.redes_fotter{
+    font-size: 55px;
+    text-shadow: 5px 5px 5px orange;
+    text-decoration: underline;
+}    
+.p_fotter{
+    font-size: 25px;
+    text-shadow: 5px 5px 5px orange;
+}
+.cont_fotter{
+    border: solid 2px #ff0;
+}
+.hr_fotter{
+    border-top: 1px solid #fff;
+}    
+
+/* termina footer*/
+
+ 
+ 
